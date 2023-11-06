@@ -33,15 +33,11 @@ dependencies {
 
 	implementation 'org.springframework.boot:spring-boot-starter-mustache'
 
-
-
-
-	// test
-	// testCompileOnly 'org.projectlombok:lombok'
-	// testAnnotationProcessor 'org.projectlombok:lombok'
-
 	testCompileOnly 'org.projectlombok:lombok'
 	testAnnotationProcessor 'org.projectlombok:lombok'
+
+	// aspectj -- AOP지원 도구 각각의 객체를 관통하는 횡적 관심사 를 모듈화해서 중복코드 제거 할수 있게 해준다 
+	implementation 'org.aspectj:aspectjweaver:1.9.7'
 
 }
 
