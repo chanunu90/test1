@@ -8,7 +8,9 @@ public interface FirstService {
 
     String getSysDate();
 
-    
+    Long calculator(long num);
+
+
 
 
 }

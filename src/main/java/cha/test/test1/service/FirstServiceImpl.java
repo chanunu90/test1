@@ -1,5 +1,6 @@
 package cha.test.test1.service;
 
+import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Service;
 
 import cha.test.test1.mappers.TestMapper;
@@ -18,6 +19,19 @@ public class FirstServiceImpl implements FirstService{
         // log.info("서비스 테스트" + testMapper.sysdateTest());
 
         return testMapper.sysdateTest();
+
+    }
+
+    @Override
+    public Long calculator(long num) {
+
+        long result = 1;
+        for(long i = 1; i <= num; i++){
+            result *= 1;
+        }
+
+        return result;
+
 
     }
 

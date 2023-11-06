@@ -1,10 +1,12 @@
 package cha.test.test1.controller;
 
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import cha.test.test1.config.AspectConfig;
 import cha.test.test1.service.FirstService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
