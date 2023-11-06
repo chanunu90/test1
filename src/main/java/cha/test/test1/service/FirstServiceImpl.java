@@ -24,15 +24,12 @@ public class FirstServiceImpl implements FirstService{
 
     @Override
     public Long calculator(long num) {
-
         long result = 1;
-        for(long i = 1; i <= num; i++){
-            result *= 1;
+        for (long i = 1; i <= num; i++) 
+        {
+            result *= i;
         }
-
         return result;
-
-
     }
 
     
