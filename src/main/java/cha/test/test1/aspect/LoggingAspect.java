@@ -2,7 +2,6 @@ package cha.test.test1.aspect;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
-import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -42,13 +41,10 @@ public class LoggingAspect {
     //     log.info("계산끝" + end);
     // }
     //다른 방법을 써보자
-
     @Pointcut("execution(* *..service.*.calculator(long))")
     private void calculatorTarget() {
-
+        //모듈화를 위하여~
     }
-
-
 
     //직접 호출
     @Around("calculatorTarget()")
